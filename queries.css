@@ -1,0 +1,20 @@
+@media (min-width:48rem) {
+
+    .product-card {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .product-card img {
+        content: url(assets/images/image-product-desktop.jpg);
+        width: 100%;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .description-box {
+        border-radius: 0 0.5rem 0.5rem 0;
+        padding: 2rem 3rem;
+        width: 100%;
+    }
+
+}

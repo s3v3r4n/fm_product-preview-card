@@ -1,0 +1,129 @@
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+
+
+    /** FONTS **/
+
+    --heading: Fraunces;
+    --main: Montserrat;
+
+    /** COLORS **/
+
+    /* primary */
+
+    --green500: hsl(158, 36%, 37%);
+    --green700: hsl(158, 42%, 18%);
+
+    /* neutral */
+
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--main);
+    font-size: 0.875rem;
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    border-radius: 1rem;
+
+}
+
+.product-card img {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.description-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.product-type {
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.description-box h2 {
+    font-family: var(--heading);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.description {
+    color: var(--grey);
+    letter-spacing: 0.04rem;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.price-actual {
+    font-family: var(--heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green500);
+}
+
+.price-crossed {
+    color: var(--grey);
+    text-decoration: line-through;
+}
+
+.add-button {
+    align-self: center;
+    text-decoration: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--green500);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+
+.add-button::before {
+    content: url(assets/images/icon-cart.svg);
+    margin-right: 0.5rem;
+    
+}
+
+.add-button:hover,
+.add-button:active {
+    background-color: var(--green700);
+    transition: 0.1s;
+}
