@@ -119,6 +119,7 @@ body {
 .add-button::before {
     content: url(assets/images/icon-cart.svg);
     margin-right: 0.5rem;
+    vertical-align: middle;
     
 }
 
